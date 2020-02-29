@@ -1,0 +1,67 @@
+<div class="container d-flex flex-column justify-content-center">
+    {{!-- {{#if isUser}} --}}
+    <form action="/" method="get" class="input-group my-4 mx-auto col-md-8 p-0">
+        <input class="form-control" id="clause-search-input" type="text" placeholder="Search for a clause"
+            aria-placeholder="Search for a clause">
+        </input>
+        <div class="input-group-append">
+            <button id="clause-search-button" type="submit" class="btn btn-primary">Search</button>
+        </div>
+    </form>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" style="padding-bottom: 50px;">
+                <h1 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Searching for a clause
+                </h1>
+                <p style="font-style: italic;">
+                    Search for a French clause to see if its subclause takes the subjunctive mood.
+                </p>
+            </div>
+
+            <div class="col-md-6">
+                <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serifs;">Searching for a book</h1>
+                <p style="font-style: italic;">
+                    Looking for a language-learning book? Check out our <a href="/book">books</a> page.
+                </p>
+            </div>
+        </div>
+    </div>
+    {{!-- {{/if}} --}}
+
+    {{!-- {{#unless isUser}}
+    <form action="/clause" method="POST" class="input-group my-4 mx-auto col-md-8 p-0">
+        <div class="form-row align-items-center">
+            <div class="col-auto">
+                <input type="text" class="form-control mb-2" id="clause-title" placeholder="Title">
+            </div>
+            <div class="col-auto">
+                <input type="text" class="form-control mb-2" id="clause-url" placeholder="URL">
+            </div>
+            <div class="col-auto">
+                <input type="text" class="form-control mb-2" id="clause-requires" placeholder="Requires">
+            </div>
+            <div class="col-auto">
+                <button id="clause-submit-button" type="submit" class="btn btn-primary mb-2">Submit</button>
+            </div>W
+        </div>
+    </form>
+
+    <form action="/api/clause/" method="PUT" class="input-group my-4 mx-auto col-md-8 p-0">
+        <div class="form-row align-items-center">
+            <div class="col-auto">
+                <input type="text" class="form-control mb-2" id="clause-id-put" placeholder="ID">
+            </div>
+            <div class="col-auto">
+                <input type="text" class="form-control mb-2" id="clause-title-put" placeholder="Title">
+            </div>
+            <div class="col-auto">
+                <input type="text" class="form-control mb-2" id="clause-requires-put" placeholder="Requires">
+            </div>
+            <div class="col-auto">
+                <button id="clause-submit-button-put" type="submit" class="btn btn-primary mb-2">Submit</button>
+            </div>
+        </div>
+    </form>
+    {{/unless}} --}}
+</div>
